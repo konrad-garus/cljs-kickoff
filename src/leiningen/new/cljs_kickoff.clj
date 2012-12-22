@@ -11,4 +11,6 @@
              ["project.clj" (render "project.clj" data)]
              ["src/{{sanitized}}/server.clj" (render "server.clj" data)]
              ["src-cljs/{{sanitized}}/client.cljs" (render "client.cljs" data)]
+             ["resources/public/css/page.css" (render "page.css" data)]
+             ["resources/public/help.html" (render "help.html" data)]
 )))
