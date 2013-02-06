@@ -3,12 +3,12 @@
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [ring "1.1.8"]]
-  :plugins [[lein-cljsbuild "0.2.8"]]
+  :plugins [[lein-cljsbuild "0.3.0"]]
   :hooks [leiningen.cljsbuild]
   :cljsbuild { 
     :builds {
       :main {
-        :source-path "src-cljs"
+        :source-paths ["src-cljs"]
         :compiler
         {
           :output-to "resources/public/js/cljs.js"
