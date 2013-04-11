@@ -3,7 +3,8 @@
   :url "http://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.4.0"]
                  [ring "1.1.8"]]
-  :plugins [[lein-cljsbuild "0.3.0"]]
+  :plugins [[lein-cljsbuild "0.3.0"]
+            [lein-ring "0.8.3"]]
   :hooks [leiningen.cljsbuild]
   :source-paths ["src/clj"]
   :cljsbuild { 
@@ -14,5 +15,6 @@
                    :optimizations :simple
                    :pretty-print true}
         :jar true}}}
-  :main {{name}}.server)
+  :main {{name}}.server
+  :ring {:handler {{name}}.server/app})
 

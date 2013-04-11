@@ -1,9 +1,11 @@
 # cljs-kickoff
 
-A Leiningen template for minimal ClojureScript project with lein-cljsbuild.
+A Leiningen template for minimal ClojureScript project with lein-cljsbuild
+and lein-ring.
 
-It's intended to be as small as possible - only use Ring, ClojureScript and 
-lein-cljsbuild. Users are free to add any other libraries as they like.
+It's intended to be as small as possible - only use Ring, ClojureScript,
+lein-cljsbuild, and lein-ring. Users are free to add any other libraries as
+they like.
 
 It has complete configuration for lein-cljsbuild. The plugin compiles .cljs
 files so that Ring can immediately serve them, it also is configured to
@@ -20,14 +22,14 @@ lein new cljs-kickoff my-project
 Up and running (with CLJS compilation):
 ```bash
 cd my-project
-lein run
+lein ring server
 ```
 
 Interactive developmnt:
 ```bash
 # Shell 1 - start server:
 cd my-project
-lein run
+lein ring server
 
 # Shell 2 - cljsbuild will recompile cljs whenever the files change:
 cd my-project
@@ -37,7 +39,7 @@ lein cljsbuild auto
 Package and run from jar:
 ```bash
 cd my-project
-lein uberjar
+lein ring uberjar
 java -jar target/my-project-0.1.0-SNAPSHOT-standalone.jar
 ```
 
