@@ -1,4 +1,4 @@
-(defproject cljs-kickoff/lein-template "0.1.4"
+(defproject cljs-kickoff/lein-template "0.1.5"
   :description "Leiningen template for ClojureScript projects with lein-cljsbuild"
   :url "https://github.com/konrad-garus/cljs-kickoff"
   :license {:name "Eclipse Public License"
